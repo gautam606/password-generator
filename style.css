@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+
+}
+.container{
+    left: 50%;
+    position: fixed;
+    display: flex;
+    min-width: 100vh;
+    overflow: hidden;
+}
+.content{
+    background-color: rgba(196, 183, 9, 0.871);
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 2px solid grey;
+    width: 52vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    /* overflow: hidden; */
+    flex: 1;
+    
+}
+
+/* Verify as Human Section */
+.verify-human {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #4a148c;
+    border-radius: 5px;
+    max-width: 300px;
+}
+.verify-human:hover{
+    background-color:  #4a148c;
+}
+
+.verify-human h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.verification-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.verification-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.3);
+}
+
+.verification-container label {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#verify-button {
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#verify-button:hover:not(:disabled) {
+    background-color: #9c27b0;
+}
+
+#verify-button:disabled {
+    background-color: #4a148c;
+    cursor: not-allowed;
+}
+
+.verification-message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    min-height: 1.2em;
+}
+
+.verification-message.success {
+    color: #69f0ae;
+}
+
+.verification-message.error {
+    color: #ff5252;
+}
+
+.content .generater{
+    margin-top: 22px;
+    justify-content: center;
+    margin-left: 2.5pc;
+    
+}
+
+.generater{
+    background-color: rgb(3, 9, 52);
+    width: 40.5pc;
+    height: auto; /* Allow the height to adjust based on content */
+    min-height: 15pc; /* Maintain minimum height */
+    border: 2px solid black;
+    color: black;
+    padding: 10px; /* Add some padding for better spacing */
+    /* filter: invert(1); */
+    color: white;
+    border-radius: 15px;
+}
+.generater h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    padding-top: 21px;
+}
+
+.or{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 4pc;
+}
+
+.first{
+    font-weight: bold;
+    text-transform:uppercase ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.second{
+    font-weight: bold;
+    text-transform:uppercase ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contentpassword button{
+    background-color: #0f35def4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-left: 1pc;
+    margin-top: 1pc 
+
+}
+
+.contentpassword2 button{
+    background-color: #0f35def4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin-left: 1pc;
+    margin-top: 1pc ;
+    width: 20pc;
+
+}
+.contentpassword button:hover{
+    background-color: #07128f;
+}
+
+/* Styles for the generative password input */
+.first {
+    margin-bottom: 20px;
+}
+
+.first label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.first input[name="generative"] {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #0f35def4;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.first input[name="generative"]:focus {
+    outline: none;
+    border-color: #07128f;
+    box-shadow: 0 0 5px rgba(7, 18, 143, 0.5);
+}
+
+.first input[name="generative"]::placeholder {
+    color: #666;
+}
+
+.storing{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.blackbox{
+    background-color:rgba(77, 72, 72, 0.892);
+    height: 33vh;
+    width: 19vw;
+    /* top: 0; */
+    padding-left: 15pc; ;
+    margin-left: 50pc;
+    padding-top: 26pc;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+}
+
+.showpassword{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40pc;
+    padding-right: 15pc;
+
+}
+.password-box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
